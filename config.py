@@ -13,7 +13,7 @@ API_HASH = os.environ.get("API_HASH", "a7fb5ac26f0e0a5742c43675fdec8f54")
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "7500440012:AAH17XIVDzfQtRS5onwHw3d8tSydbwkGlNs") 
 
-FORCE_SUB = os.environ.get("FORCE_SUB", "Uchiha_Developer") 
+FORCE_SUB = os.environ.get("FORCE_SUB", "https://t.me/+wm7HnsM4mM8xNmFl") 
 
              # Don't Remove Credit @VJ_Botz
              # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
@@ -25,7 +25,7 @@ DB_URL = os.environ.get("DB_URL", "mongodb+srv://Lazy:Lazy@cluster0.zigg8lw.mong
  
 FLOOD = int(os.environ.get("FLOOD", "10"))
 
-START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/1485f2a9ef06e7369e20a.jpg")
+START_PIC = os.environ.get("START_PIC", "https://telegra.ph/file/5377d6419b2c9f9fc8d73.jpg")
 
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6335438828').split()]
 
