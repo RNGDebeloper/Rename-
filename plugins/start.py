@@ -18,19 +18,19 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
+    txt=f"Hᴀɪ {user.mention}! \n\n◈ I Aᴍ A Pᴏᴡᴇʀғᴜʟ Fɪʟᴇ Rᴇɴᴀᴍᴇʀ Bᴏᴛ.\n◈ I Cᴀɴ Rᴇɴᴀᴍᴇ Fɪʟᴇs, Cʜᴀɴɢᴇ Tʜᴜᴍʙɴᴀɪʟs, Cᴏɴᴠᴇʀᴛ Bᴇᴛᴡᴇᴇɴ Vɪᴅᴇᴏ Aɴᴅ Fɪʟᴇ, Aɴᴅ Sᴜᴘᴘᴏʀᴛ Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟs Aɴᴅ Cᴀᴘᴛɪᴏɴs.\n\n• Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : @Uchiha_Developer"
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton(" Developer ", url='https://t.me/Uchiha_Developer')
         ],[
         InlineKeyboardButton(' Movie Streaming', url='https://t.me/+1c6VTYcfPIJiNGNl'),
-        InlineKeyboardButton(' Support', url='https://t.me/Uchiha_Developer')
+        InlineKeyboardButton(' Anime Streaming', url='https://t.me/Toonami_India')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/+YIRugCE4oVs1ZjY1')
+        InlineKeyboardButton(" Join Our Community!", url='https://t.me/Uchiha_Community')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/@anitoon_India')
+        InlineKeyboardButton("Join Our 2nd Community!", url='https://t.me/ZolDox')
         ]
         ])
     if START_PIC:
@@ -72,19 +72,19 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
+            text=f"""Hᴀɪ {query.from_user.mention}! \n\n◈ I Aᴍ A Pᴏᴡᴇʀғᴜʟ Fɪʟᴇ Rᴇɴᴀᴍᴇʀ Bᴏᴛ.\n◈ I Cᴀɴ Rᴇɴᴀᴍᴇ Fɪʟᴇs, Cʜᴀɴɢᴇ Tʜᴜᴍʙɴᴀɪʟs, Cᴏɴᴠᴇʀᴛ Bᴇᴛᴡᴇᴇɴ Vɪᴅᴇᴏ Aɴᴅ Fɪʟᴇ, Aɴᴅ Sᴜᴘᴘᴏʀᴛ Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟs Aɴᴅ Cᴀᴘᴛɪᴏɴs.\n\n• Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : @Uchiha_Developer""",
             reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton(" Developer ", url='https://t.me/Uchiha_Developer')
         ],[
         InlineKeyboardButton(' Movie Streaming', url='https://t.me/+1c6VTYcfPIJiNGNl'),
-        InlineKeyboardButton(' Support', url='https://t.me/Uchiha_Developer')
+        InlineKeyboardButton(' Anime Streaming', url='https://t.me/Toonami_India')
         ],[
         InlineKeyboardButton(' About', callback_data='about'),
         InlineKeyboardButton(' Help', callback_data='help')
         ],[
-        InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/+YIRugCE4oVs1ZjY1')
+        InlineKeyboardButton(" Join Our Community!", url='https://t.me/Uchiha_Community')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/@anitoon_India')
+        InlineKeyboardButton("Join Our 2nd Community!", url='https://t.me/ZolDox')
         ]
         ]
                 )
